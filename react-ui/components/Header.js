@@ -4,7 +4,14 @@ import styles from "./Header.module.scss";
 
 export default ({ children, title, isRequest }) => (
   <div className={styles.wrapper}>
-    <div className={styles.header}><Link href="/"><a>abistame!</a></Link></div>
+    <div className={styles.header}>
+      <Link href="/">
+        <a>abistame!</a>
+      </Link>
+      <Link href="/">
+        <img className={styles.menu} src="/menu.png" />
+      </Link>
+    </div>
     {children}
     <div className={cc(["row", styles.footer])}>
       {title ? (
