@@ -6,7 +6,7 @@
     "node": "10.x"
   },
   "scripts": {
-	"doMigration": "knex migrate:latest",
+    "doMigration": "knex migrate:latest",
     "start": "npm run doMigration && node server",
     "build": "cd react-ui/ && npm install && npm run build"
   },
@@ -38,5 +38,8 @@
     "react"
   ],
   "license": "MIT",
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7"
+  }
 }
